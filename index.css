@@ -1,0 +1,90 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1eb3f4;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin: auto;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: 2px solid white;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    animation: pulse 1.5s infinite;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  textarea {
+    width: 70%;
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  #inputWord {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #translatedText {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+      transform: scale(1);
+      box-shadow: 0px 4px 10px rgba(84, 67, 67, 0.1);
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 10% 5%;
+    }
+  }
